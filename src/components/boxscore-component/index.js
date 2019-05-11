@@ -23,8 +23,8 @@ class Boxscore extends Component {
       .then(([res1, res2]) => {
         this.setState({
           loading: false,
-          dataMlb: res1.data,
-          dataNba: res2.data
+          dataNba: res1.data,
+          dataMlb: res2.data
         })
       })
       .catch(err => {
@@ -37,7 +37,7 @@ class Boxscore extends Component {
   }
 
   render() {
-
+    console.log('state', this.state);
     return (
       <div>
         {!this.state.loading ?

@@ -1,0 +1,11 @@
+.cell{
+  text-align: center !important;
+  padding: 0 !important;
+}
+.mlbTable{
+  background: #EFEFEF;
+  border-right: 2px solid #DDD !important;
+  border-top: 2px solid #DDD !important;
+  border-left: none !important;
+  border-bottom: none !important;
+}

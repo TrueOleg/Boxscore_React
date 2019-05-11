@@ -1,0 +1,31 @@
+.tableHead{
+  border-bottom: 2px solid #DDD;
+}
+.firstColumn{
+  border-right: 2px solid #DDD !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-bottom: none !important;
+  background: #EFEFEF;
+  text-align: center !important;
+  padding: 0 !important;
+}
+.score{
+  text-align: center !important;
+  padding: 0 !important;
+}
+.period{
+  text-align: center !important;
+  padding: 0 !important;
+}
+.table{
+  border-right: 2px solid #DDD;
+  border-top: 2px solid #DDD;
+  border-left: 2px solid #DDD;
+}
+.teamScore{
+  
+}
+.cell{
+  border: none !important;
+}
