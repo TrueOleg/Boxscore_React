@@ -1,0 +1,34 @@
+.homeTeamDetails{
+  height: 100px;
+  background: #0b2c6a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.awayTeamDetails{
+  height: 100px;
+  background: #b70332;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.teamName{
+  padding: 0 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+.batterTotals{
+  color: #FFFFFF
+}
+.gameDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 2px solid #DDD;
+  border-bottom: 2px solid #DDD;
+  background: #EFEFEF;
+}

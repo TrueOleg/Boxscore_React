@@ -1,7 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import ScoresTable from '../scores-table-component';
 import MlbTable from '../mlb-table-component';
+import NbaTable from '../nba-table-component';
 import MlbDetails from '../mlb-details-component';
+import NbaDetails from '../nba-details-component';
 import Grid from '@material-ui/core/Grid';
 
 class League extends Component {
@@ -9,6 +11,7 @@ class League extends Component {
   getLeagueTable = (league) => {
     const LEAGUE = {
       MLB: <MlbTable data={this.props.gameData} />,
+      NBA: <NbaTable data={this.props.gameData} />
     }
     return LEAGUE[league]
   }
@@ -16,6 +19,7 @@ class League extends Component {
   getGameDetails = (league) => {
     const LEAGUE = {
       MLB: <MlbDetails data={this.props.gameData} />,
+      NBA: <NbaDetails data={this.props.gameData} />
     }
     return LEAGUE[league]
   }

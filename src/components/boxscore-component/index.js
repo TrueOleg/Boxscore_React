@@ -43,6 +43,7 @@ class Boxscore extends Component {
         {!this.state.loading ?
           <Fragment>
             <League gameData={this.state.dataMlb}></League>
+            <League gameData={this.state.dataNba}></League>
           </ Fragment> : null
         }
       </div>
