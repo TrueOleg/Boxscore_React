@@ -1,10 +1,13 @@
 import React, { Component, Fragment } from 'react';
+import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
 import './style.css'
 
 class MlbDetails extends Component {
 
   render() {
+
+    console.log('props', this.props);
     const statusGeneral = this.props.data.event_information.status === 'completed' ? 'BTM' : 'BTL'
     const statusPeriod = this.props.data.event_information.status === 'completed' ? '9TH' : 'another'
     return (
@@ -36,5 +39,26 @@ class MlbDetails extends Component {
   }
 }
 
+MlbDetails.propTypes = {
+  data: PropTypes.shape({
+    event_information: PropTypes.shape({
+      status: PropTypes.string
+    }),
+    home_team: PropTypes.shape({
+      last_name: PropTypes.string
+    }),
+    home_batter_totals: PropTypes.shape({
+      hits: PropTypes.number,
+      at_bats: PropTypes.number
+    }),
+    away_team: PropTypes.shape({
+      last_name: PropTypes.string
+    }),
+    away_batter_totals: PropTypes.shape({
+      hits: PropTypes.number,
+      at_bats: PropTypes.number
+    }),
+  })
+};
 
 export default MlbDetails;

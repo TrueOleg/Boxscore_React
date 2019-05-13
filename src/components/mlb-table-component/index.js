@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -35,5 +36,19 @@ class MlbTable extends Component {
   }
 }
 
+MlbTable.propTypes = {
+  data: PropTypes.shape({
+    home_batter_totals: PropTypes.shape({
+      hits: PropTypes.number,
+      runs: PropTypes.number
+    }),
+    home_errors: PropTypes.number,
+    away_batter_totals: PropTypes.shape({
+      hits: PropTypes.number,
+      runs: PropTypes.number
+    }),
+    away_errors: PropTypes.number,
+  })
+};
 
 export default MlbTable;

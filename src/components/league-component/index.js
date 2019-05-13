@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import PropTypes from 'prop-types';
 import ScoresTable from '../scores-table-component';
 import MlbTable from '../mlb-table-component';
 import NbaTable from '../nba-table-component';
@@ -52,5 +53,15 @@ class League extends Component {
 
   };
 }
+
+League.propTypes = {
+  gameData: PropTypes.shape({
+    league: PropTypes.string,
+    away_team: PropTypes.object,
+    home_team: PropTypes.object,
+    away_period_scores: PropTypes.array,
+    home_period_scores: PropTypes.array,
+  })
+};
 
 export default League;

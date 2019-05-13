@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
 import './style.css'
 
@@ -30,5 +31,18 @@ class NbaDetails extends Component {
   }
 }
 
+NbaDetails.propTypes = {
+  data: PropTypes.shape({
+    event_information: PropTypes.shape({
+      status: PropTypes.string
+    }),
+    home_team: PropTypes.shape({
+      last_name: PropTypes.string
+    }),
+    away_team: PropTypes.shape({
+      last_name: PropTypes.string
+    })
+  })
+};
 
 export default NbaDetails;
