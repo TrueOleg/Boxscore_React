@@ -37,7 +37,6 @@ class Boxscore extends Component {
   }
 
   render() {
-    console.log('state', this.state);
     return (
       <div>
         {!this.state.loading ?

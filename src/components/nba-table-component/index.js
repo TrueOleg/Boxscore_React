@@ -9,8 +9,6 @@ import './style.css'
 class NbaTable extends Component {
 
   render() {
-    const mlb = this.props;
-    console.log('mlb', mlb);
     return (
       <Table className="mlbTable">
         <TableHead>

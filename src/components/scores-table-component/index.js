@@ -11,7 +11,6 @@ class ScoresTable extends Component {
 
   render() {
     const league = this.props.tableData;
-    console.log('scores', league);
     return (
       <Table className="table">
         <TableHead>

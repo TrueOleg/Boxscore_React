@@ -25,7 +25,6 @@ class League extends Component {
   }
 
   render() {
-    console.log('props', this.props.gameData);
     const leagueTable = this.getLeagueTable(this.props.gameData.league);
     const gameDetails = this.getGameDetails(this.props.gameData.league);
 
@@ -38,6 +37,7 @@ class League extends Component {
 
     return (
       <Fragment>
+        <h1>{this.props.gameData.league}</h1>
         <Grid container wrap="nowrap">
           <Grid item xs={9}>
             <ScoresTable tableData={scoresTableData}></ScoresTable>
