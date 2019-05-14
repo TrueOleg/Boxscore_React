@@ -7,7 +7,6 @@ class MlbDetails extends Component {
 
   render() {
 
-    console.log('props', this.props);
     const statusGeneral = this.props.data.event_information.status === 'completed' ? 'BTM' : 'BTL'
     const statusPeriod = this.props.data.event_information.status === 'completed' ? '9TH' : 'another'
     return (
