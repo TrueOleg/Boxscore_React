@@ -20,6 +20,18 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/"
+    ],
+    "coverageReporters": [
+      "json",
+      "html",
+      "text"
+    ],
+    "resetMocks": true
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
