@@ -26,6 +26,7 @@ class League extends Component {
 
   componentDidMount() {
     axios.get(`http://localhost:3600/api/games`, { params: { league: this.props.league } }).then((res) => {
+      console.log('res', res);
       this.setState({
         loading: false,
         game: res.data,
